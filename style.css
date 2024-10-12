@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1350px;
+  height: 1000px;
+  background-color: white;
+}
+
+.heading-main {
+  margin-top: -30px;
+  margin-bottom: 50px;
+  padding-top: -10px;
+  padding-left: 113px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  font-size: 42px;
+  color: #1e0e62;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: -40px;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+}
+
+.first-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ebeaed;
+  color: #1e0e62;
+  margin-left: 110px;
+}
+
+.heading-first-card,
+.heading-second-card,
+.heading-third-card,
+.heading-fourth-card {
+  text-align: left;
+  padding-left: 90px;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+.paragraph-first-card,
+.paragraph-second-card,
+.paragraph-third-card,
+.paragraph-fourth-card {
+  text-align: left;
+  padding-bottom: 100px;
+  width: 400px;
+  height: 100px;
+  color: #1e0e62;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.paragraph-third-card,
+.paragraph-fourth-card {
+  color: white;
+}
+
+.button-first-card,
+.button-second-card,
+.button-third-card,
+.button-fourth-card {
+  width: 100%;
+  text-align: left;
+  margin-top: -40px;
+  padding-left: 90px;
+}
+
+.second-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 3px solid #ebeaed;
+}
+
+.third-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #482be7;
+  color: white;
+  margin-left: 110px;
+}
+
+.fourth-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  background-image: url("https://s3-alpha-sig.figma.com/img/11ed/ef21/5947a87760019ac83d936f3ef08727bd?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l3LRJSDfEvJDiFjG0ZN7EMEHKHTqika0f~EZ~eWLF3i8jMBlb9ZbJNCgFZpm24DK7UUfS-8jV5gia2voSIEbmd~KILpfyx4dhkhSFKwgphnG98pUf-u~suUfRJwddaruIBJAGXbklJdIltY2GLrSKrikYBZryYCcF0408xSbn~RZ8Xy3OeuxA1wWP3UlDwQA-FExS-20DDDNzTDWanwEBuDrzbLVjHOhd4q0wZVg3bybM8~tOVxMhcMNGjLbPbIEF97YmErhpjGB5oteEf5HXbgrHDQxuHxFcPeXJAWuEQVX26tiSnM~drr6kHUcGwEfWI6-hyPnReewxzdM9KRSgQ__");
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #1e0e62;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+
+.white-button {
+  background-color: white;
+  color: #1e0e62;
+  font-size: 16px;
+}
+
+.green-button {
+  background-color: #25dac5;
+  color: white;
+  font-size: 16px;
+}
