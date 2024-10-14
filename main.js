@@ -1,11 +1,23 @@
 function Heading(tag = "h1", content) {
-  const node = document.createElement(tag);
-  node.textContent = content;
+  const heading = document.createElement(tag);
+  heading.textContent = content;
 
-  return node;
+  return heading;
 }
 
 ////////
+
+function createButton(text, background, border) {
+  const button = document.createElement("button");
+  button.textContent = text;
+  button.style.background = background;
+  button.style.border = border;
+  button.className = "custom-button";
+
+  return button;
+}
+
+///////
 
 function createCard(title, description, buttonText, cardClass, buttonClass) {
   const card = document.createElement("div");
@@ -27,9 +39,14 @@ function createCard(title, description, buttonText, cardClass, buttonClass) {
 
   const buttonDiv = document.createElement("div");
   buttonDiv.className = `button-${cardClass}`;
-  const button = document.createElement("button");
-  button.className = `explore-btn ${buttonClass}`;
-  button.textContent = buttonText;
+  //const button = document.createElement("button");
+  //button.className = `explore-btn ${buttonClass}`;
+  //button.textContent = buttonText;
+  const button = createButton(
+    buttonText,
+    buttonClass === "white-button" ? "white" : "#25DAC5",
+    "0px solid white"
+  );
   buttonDiv.appendChild(button);
   card.appendChild(buttonDiv);
 
@@ -101,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //document.body.appendChild(h1); //добавляем наш h1
 
   const grid = createGrid();
+
   const app = document.getElementById("app");
   app.className = "main-container";
 

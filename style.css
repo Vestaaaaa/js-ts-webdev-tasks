@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/DMSans_36pt-Regular.ttf") format("truetype"); /* путь к файлу шрифта */
+  font-weight: 400; /* вес шрифта */
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: #f4f4f4;
+  word-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .main-container {
@@ -73,17 +82,23 @@ p {
 .paragraph-third-card,
 .paragraph-fourth-card {
   text-align: left;
-  padding-bottom: 100px;
+  padding-bottom: 160px;
   width: 400px;
   height: 100px;
   color: #1e0e62;
   font-size: 16px;
   line-height: 26px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.paragraph-second-card {
+  color: #15143966;
 }
 
 .paragraph-third-card,
 .paragraph-fourth-card {
   color: white;
+  font-weight: 100;
 }
 
 .button-first-card,
@@ -92,7 +107,7 @@ p {
 .button-fourth-card {
   width: 100%;
   text-align: left;
-  margin-top: -40px;
+  margin-top: -100px;
   padding-left: 90px;
 }
 
@@ -102,6 +117,7 @@ p {
   justify-content: center;
   background-color: white;
   border: 3px solid #ebeaed;
+  color: #1e0e62;
 }
 
 .third-card {
@@ -119,28 +135,18 @@ p {
   justify-content: center;
   background-size: cover;
   color: white;
-  background-image: url("https://s3-alpha-sig.figma.com/img/11ed/ef21/5947a87760019ac83d936f3ef08727bd?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l3LRJSDfEvJDiFjG0ZN7EMEHKHTqika0f~EZ~eWLF3i8jMBlb9ZbJNCgFZpm24DK7UUfS-8jV5gia2voSIEbmd~KILpfyx4dhkhSFKwgphnG98pUf-u~suUfRJwddaruIBJAGXbklJdIltY2GLrSKrikYBZryYCcF0408xSbn~RZ8Xy3OeuxA1wWP3UlDwQA-FExS-20DDDNzTDWanwEBuDrzbLVjHOhd4q0wZVg3bybM8~tOVxMhcMNGjLbPbIEF97YmErhpjGB5oteEf5HXbgrHDQxuHxFcPeXJAWuEQVX26tiSnM~drr6kHUcGwEfWI6-hyPnReewxzdM9KRSgQ__");
+  background-image: url("./assets/img-domapi-hm.png");
 }
 
-.explore-btn {
-  padding: 10px 20px;
+.custom-button {
+  padding: 12px 24px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   margin-top: 10px;
   color: #1e0e62;
   font-family: "DM Sans", sans-serif;
+  font-size: 15px;
   font-weight: 600;
-}
-
-.white-button {
-  background-color: white;
-  color: #1e0e62;
-  font-size: 16px;
-}
-
-.green-button {
-  background-color: #25dac5;
-  color: white;
-  font-size: 16px;
+  letter-spacing: 1.5px;
 }
