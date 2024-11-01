@@ -1,0 +1,21 @@
+{
+  "name": "js-ts-webdev-tasks",
+  "version": "1.0.0",
+  "description": "Implement **only three sections** (`hero`, `gallery` and `footer`) for both RTL and Enlish versions from design according [Figma Design](<https://www.figma.com/file/Z9i2HiOV3VtvhnqkKBUUon/Free-Halloween-Party-Time-Landing-Page-(Community)?type=design&node-id=0-1&mode=design&t=rp5neXS05UbP5lGk-0>)",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.21.5",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.4.47",
+    "rollup": "^4.24.2",
+    "source-map-js": "^1.2.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC"
+}
