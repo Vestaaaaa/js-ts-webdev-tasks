@@ -1,0 +1,26 @@
+export const texts = {
+  en: {
+    home: "Home",
+    gallery: "Gallery",
+    aboutParty: "About Party",
+    reservation: "Reservation",
+    contacts: "Contacts",
+    reservationButton: "Reservation",
+    performanceTime: "31 October 2023",
+    partyName: "It's Halloween Party O'Clock!",
+    galleryName: "Halloween Memories",
+    footerNumber: "phone reservation? (+1) 987 46 52 ",
+  },
+  ar: {
+    home: "الرئيسية",
+    gallery: "المعرض",
+    aboutParty: "عن الحفلة",
+    reservation: "الحجز",
+    contacts: "جهات الاتصال",
+    reservationButton: "الحجز",
+    performanceTime: "31 أكتوبر 2023",
+    partyName: "إنها ساعة حفلة الهالوين!",
+    galleryName: "ذكريات الهالوين",
+    footerNumber: "الحجز عبر الهاتف؟ (+1) 987 46 52",
+  },
+};

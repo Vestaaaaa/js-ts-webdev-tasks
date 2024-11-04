@@ -15,6 +15,7 @@ export function AppPageHero() {
   <div class="header-components">
   ${componentsHTML}
   </div>
+  <button id="language-switch">Switch Language</button>
   <button class="button-header">Reserve Now</button>
   </div>
   <div class ="performance-time"><h2>31 October 2023</h2></div>

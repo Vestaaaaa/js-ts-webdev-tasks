@@ -48,13 +48,12 @@ export function AppPageGallery(): HTMLElement {
 
   node.appendChild(nameOfGallery);
 
-  // Создаем до 10 изображений
   DATABASE.forEach((item: ImageData) => {
     const galleryComponent: HTMLImageElement = document.createElement("img");
     galleryComponent.className = "gallery-component";
     galleryComponent.src = item.photo;
-    galleryComponent.alt = "Gallery Image"; // Альтернативный текст для изображений
-    galleryContainer.appendChild(galleryComponent); // Добавляем изображение в контейнер галереи
+    galleryComponent.alt = "Gallery Image";
+    galleryContainer.appendChild(galleryComponent);
   });
 
   node.appendChild(galleryContainer);

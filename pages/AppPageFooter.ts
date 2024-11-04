@@ -1,9 +1,7 @@
 export function AppPageFooter(): HTMLElement {
-  // Создаем секцию
   const node: HTMLElement = document.createElement("section");
   node.className = "footer-page";
 
-  // Создаем шаблон
   const template: HTMLTemplateElement = document.createElement("template");
   template.innerHTML = `
         <div class="footer-container">
@@ -19,10 +17,8 @@ export function AppPageFooter(): HTMLElement {
         </div>
     `;
 
-  // Клонируем содержимое шаблона
   const clonedContent = template.content.cloneNode(true);
 
-  // Добавляем клонированное содержимое в секцию
   node.appendChild(clonedContent);
 
   return node;
