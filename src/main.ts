@@ -1,5 +1,5 @@
 import cardData from "./db/cards.json";
-import { createCard } from "./components/Card";
+import { Card } from "./components/Card";
 
 export function Heading(tag = "h1", content: string) {
   const headingElement = document.createElement(tag);
@@ -15,7 +15,7 @@ export function Paragraph(content: string) {
   return paragraphElement;
 }
 
-function createGrid() {
+function Grid() {
   const mainContainer = document.createElement("div");
   mainContainer.className = "main-container";
 
@@ -30,12 +30,7 @@ function createGrid() {
   const cardsContainer = document.createElement("div");
   cardsContainer.className = "cards-container";
   cardData.forEach((data) => {
-    const card = createCard(
-      data.heading,
-      data.description,
-      data.tags,
-      data.image
-    );
+    const card = Card(data.heading, data.description, data.tags, data.image);
     cardsContainer.appendChild(card);
   });
 
@@ -43,4 +38,4 @@ function createGrid() {
   document.body.appendChild(mainContainer);
 }
 
-createGrid();
+Grid();

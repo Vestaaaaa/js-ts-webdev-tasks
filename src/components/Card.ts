@@ -3,7 +3,7 @@ import { Paragraph } from "../main";
 import { Image } from "./Image";
 import { Tags } from "./Tags";
 
-export function createCard(
+export function Card(
   title: string,
   description: string,
   tags: { title: string; slug: string }[],
