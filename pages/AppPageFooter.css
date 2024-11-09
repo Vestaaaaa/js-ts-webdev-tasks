@@ -1,0 +1,39 @@
+.footer-page {
+  width: 1440px;
+  height: 1000px;
+  background-color: #000015;
+}
+
+.footer-container {
+  width: 1440px;
+  height: 1020px;
+  position: relative;
+}
+
+.grassFooter-img {
+  width: 1440px;
+  height: 700px;
+  margin-top: 300px;
+}
+
+.number-footer {
+  color: #fe772d;
+  margin-left: 422px;
+  margin-top: 640px;
+  position: absolute;
+  padding-top: 50px;
+  color: #fe772d;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 81.2px;
+  text-align: center;
+  font-family: "Jolly Lodger";
+}
+
+.socialNetworks-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -200px;
+}

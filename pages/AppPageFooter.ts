@@ -5,7 +5,7 @@ export function AppPageFooter(): HTMLElement {
   const template: HTMLTemplateElement = document.createElement("template");
   template.innerHTML = `
         <div class="footer-container">
-            <h2 class="number-footer">phone reservation? (+1) 987 46 52</h2>
+            <h2  data-i18n = "footerNumber" class="number-footer">PHONE RESERVATION? (+1) 987 46 52</h2>
             <img class="grassFooter-img" src="./assets/Vector.png" alt="Grass Footer" />
             <div class="socialNetworks-footer">
                 <img src="./assets/behance.png" alt="Behance" />

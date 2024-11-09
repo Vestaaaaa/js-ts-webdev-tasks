@@ -34,26 +34,53 @@
   return node;
 } */
 
+import localization from "./localization.json";
 import { AppPageHero } from "../pages/AppPageHero";
 import { AppPageGallery } from "../pages/AppPageGallery";
 import { AppPageFooter } from "../pages/AppPageFooter";
+import { AppButtonLocalization } from "../pages/AppButtonLocalization";
+
+let currentLocale: "en" | "ar" = "en";
+
+export function changeLocale() {
+  currentLocale = currentLocale === "en" ? "ar" : "en";
+  translateAllTextOnPage();
+}
+
+function translateAllTextOnPage() {
+  const localeMessages = localization[currentLocale];
+  const elementsForTranslation = document.querySelectorAll("[data-i18n]");
+  elementsForTranslation.forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    element.innerText = localeMessages[key];
+  });
+}
 
 //////////////////////////////////
 document.addEventListener("DOMContentLoaded", () => {
   const app: HTMLElement | null = document.getElementById("app");
+  app.className = "app-container";
   if (!app) {
     console.error("Element with id 'app' not found");
     return;
   }
 
-  app.className = "main-container";
-
   const heroSection: HTMLElement = AppPageHero();
   app.appendChild(heroSection);
 
-  const gallerySection: HTMLElement = AppPageGallery(); // Генерируем галерею
-  app.appendChild(gallerySection); // Добавляем галерею в приложение
+  const switcher = heroSection.querySelector(".switcher");
+  switcher.addEventListener("click", changeLocale);
+
+  /*const switchButton: HTMLElement = AppButtonLocalization();
+  switchButton.setAttribute("data-i18n", "switchButton");
+  heroSection.appendChild(switchButton);
+  switchButton.addEventListener("click", changeLocale); */
+
+  const gallerySection: HTMLElement = AppPageGallery();
+  app.appendChild(gallerySection);
 
   const footerSection: HTMLElement = AppPageFooter();
   app.appendChild(footerSection);
+
+  console.log(localization);
 });

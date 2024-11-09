@@ -44,8 +44,8 @@ export function AppPageGallery(): HTMLElement {
 
   const nameOfGallery: HTMLElement = document.createElement("h2");
   nameOfGallery.className = "name-of-gallery";
-  nameOfGallery.textContent = "Halloween Memories";
-
+  nameOfGallery.textContent = "HALLOWEEN MEMORIES";
+  nameOfGallery.setAttribute("data-i18n", "galleryName");
   node.appendChild(nameOfGallery);
 
   DATABASE.forEach((item: ImageData) => {

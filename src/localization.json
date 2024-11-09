@@ -1,0 +1,32 @@
+{
+  "en": {
+    "logo": "Party Time!",
+    "home": "Home",
+    "gallery": "Gallery",
+    "aboutParty": "About Party",
+    "reservation": "Reservation",
+    "contacts": "Contacts",
+    "reservationButton": "Reservation",
+    "switchButton": "EN إنإنر",
+    "reserveButton": "Reserve Now",
+    "performanceTime": "31 October 2023",
+    "title": "It's Halloween Party O'Clock!",
+    "galleryName": "Halloween Memories",
+    "footerNumber": "phone reservation? (+1) 987 46 52 "
+  },
+  "ar": {
+    "logo": "وقت الاحتفال!",
+    "home": "الرئيسية",
+    "gallery": "المعرض",
+    "aboutParty": "عن الحفلة",
+    "reservation": "الحجز",
+    "contacts": "جهات الاتصال",
+    "reservationButton": "الحجز",
+    "switchButton": "EN إنإنر",
+    "reserveButton": "ضال",
+    "performanceTime": "31 أكتوبر 2023",
+    "title": "إنها ساعة حفلة الهالوين!",
+    "galleryName": "ذكريات الهالوين",
+    "footerNumber": "الحجز عبر الهاتف؟ (+1) 987 46 52"
+  }
+}
