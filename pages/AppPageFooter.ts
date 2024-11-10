@@ -2,7 +2,7 @@ export function AppPageFooter(): HTMLElement {
   const node: HTMLElement = document.createElement("section");
   node.className = "footer-page";
 
-  const template: HTMLTemplateElement = document.createElement("template");
+  /*const template: HTMLTemplateElement = document.createElement("template");
   template.innerHTML = `
         <div class="footer-container">
             <h2  data-i18n = "footerNumber" class="number-footer">PHONE RESERVATION? (+1) 987 46 52</h2>
@@ -15,7 +15,34 @@ export function AppPageFooter(): HTMLElement {
                 <img src="./assets/youtube.png" alt="Figma" />
             </div>
         </div>
-    `;
+    `; */
+
+  const template: HTMLTemplateElement = document.createElement("template");
+
+  const vectorImageUrl = new URL("../assets/Vector.png", import.meta.url).href;
+  const behanceImageUrl = new URL("../assets/behance.png", import.meta.url)
+    .href;
+  const figmaImageUrl = new URL("../assets/Figma.png", import.meta.url).href;
+  const linkedinImageUrl = new URL("../assets/Linkedin.png", import.meta.url)
+    .href;
+  const instagramImageUrl = new URL("../assets/instagram.png", import.meta.url)
+    .href;
+  const youtubeImageUrl = new URL("../assets/youtube.png", import.meta.url)
+    .href;
+
+  template.innerHTML = `
+    <div class="footer-container">
+        <h2 data-i18n="footerNumber" class="number-footer">PHONE RESERVATION? (+1) 987 46 52</h2>
+        <img class="grassFooter-img" src="${vectorImageUrl}" alt="Grass Footer" />
+        <div class="socialNetworks-footer">
+            <img src="${behanceImageUrl}" alt="Behance" />
+            <img src="${figmaImageUrl}" alt="Figma" />
+            <img src="${linkedinImageUrl}" alt="LinkedIn" />
+            <img src="${instagramImageUrl}" alt="Instagram" />
+            <img src="${youtubeImageUrl}" alt="YouTube" />
+        </div>
+    </div>
+`;
 
   const clonedContent = template.content.cloneNode(true);
 

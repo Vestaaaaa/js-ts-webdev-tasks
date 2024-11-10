@@ -4,34 +4,34 @@ interface ImageData {
 
 const DATABASE: ImageData[] = [
   {
-    photo: "./assets/image01.png",
+    photo: new URL("../assets/image01.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image02.png",
+    photo: new URL("../assets/image02.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image03.png",
+    photo: new URL("../assets/image03.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image04.png",
+    photo: new URL("../assets/image04.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image05.png",
+    photo: new URL("../assets/image05.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image06.png",
+    photo: new URL("../assets/image06.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image07.png",
+    photo: new URL("../assets/image07.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image08.png",
+    photo: new URL("../assets/image08.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image09.png",
+    photo: new URL("../assets/image09.png", import.meta.url).href,
   },
   {
-    photo: "./assets/image10.png",
+    photo: new URL("../assets/image10.png", import.meta.url).href,
   },
 ];
 
@@ -40,6 +40,7 @@ export function AppPageGallery(): HTMLElement {
   node.className = "gallery";
 
   const galleryContainer: HTMLElement = document.createElement("div");
+
   galleryContainer.className = "gallery-container";
 
   const nameOfGallery: HTMLElement = document.createElement("h2");
