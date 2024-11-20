@@ -32,7 +32,7 @@ export function AppPageFooter(): HTMLElement {
 
   template.innerHTML = `
     <div class="footer-container">
-        <h2 data-i18n="footerNumber" class="number-footer">PHONE RESERVATION? (+1) 987 46 52</h2>
+        <h2 data-i18n="footerNumber" class="number-footer" id = "reverse">PHONE RESERVATION? (+1) 987 46 52</h2>
         <img class="grassFooter-img" src="${vectorImageUrl}" alt="Grass Footer" />
         <div class="socialNetworks-footer">
             <img src="${behanceImageUrl}" alt="Behance" />

@@ -17,6 +17,7 @@
 }
 
 .number-footer {
+  direction: rtl;
   color: #fe772d;
   margin-left: 422px;
   margin-top: 640px;
@@ -28,6 +29,10 @@
   line-height: 81.2px;
   text-align: center;
   font-family: "Jolly Lodger";
+}
+
+body.reverse {
+  direction: ltr;
 }
 
 .socialNetworks-footer {

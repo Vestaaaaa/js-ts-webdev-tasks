@@ -19,18 +19,20 @@ export function AppPageHero() {
 
   const headerHTML: string = `
   <div class="header-container">
-   <div class ="logo-partyTime"><h2 data-i18n = "logo">Party Time!</h2></div>
-    <div class="header-components">
+   <div id = "content" class ="logo-partyTime"><h2 data-i18n = "logo">Party Time!</h2></div>
+    <div id = "content" class="header-components">
   ${componentsHTML}
     </div>
-    <div class="switcher">${AppButtonLocalization().outerHTML}</div>
+    <div id = "content" class="switcher">${
+      AppButtonLocalization().outerHTML
+    }</div>
    <button data-i18n = "reserveButton" class="button-header">Reserve Now</button>
   </div>
 
   <div class ="performance-time"><h2 data-i18n = "performanceTime">31 OCTOBER 2023</h2></div>
   <div class = "party-name"><h2 data-i18n = "title">IT'S  HALLOWEEN PARTY O'CLOCK!</h2></div>
   `;
-  // Устанавливаем созданный HTML в основное узло секции
+  // устанавливаем созданный html
   node.innerHTML = headerHTML;
 
   return node;

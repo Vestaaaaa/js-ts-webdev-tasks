@@ -1,7 +1,7 @@
 .page-hero {
   width: 1440px;
   height: 1100px;
-  background-image: url("https://s3-alpha-sig.figma.com/img/4a5b/1f73/d4e21a6e53d5fe118c518df85acb5b53?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rx6VT8NQ6~MM5nZQK5Nf3ZnIMzMxi7e40JhSxFROBlX8SD5cavj0ViNZvH5a-vTUjjkvS4dxsgmXUD547l4I0bYEklmUhpdzih1W5BAm-cCaSOExh5ktIaOQ39Hqbn1ha5N3lzGBvb57eYYViwgKYP60pLXNcQlMcVxhiZQJP1RGuuB9PEdv5ZCb4JrthDaDW-at1QEcNbBS2EBWa7oaCHus44ALlV1Gnjpqg0dcca4iAu2Y7BDCqpsPOilZabi9-cVBsmwseGMGc3z1HoqfEhJXVIWKXOmC55aorrgbWwPXpCrNvdOtvpq49ViGa~oCYk8io~Ipkouqq6sHsE0wyQ__");
+  background-image: url("https://s3-alpha-sig.figma.com/img/4a5b/1f73/d4e21a6e53d5fe118c518df85acb5b53?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J~fxOY1eWeCLnsBb8qHFmnoQY4WXjKcPYPmmQyHCOXIIwlYSXmPcQi~xtq2d0x9IB2YZkqfR-ceN1mcX-~vzuIb9IpejHmECvvcWK6zX-fEmJL7oKHMOpGDrzLx4PfMqEqZjN6OVhrzj2QvIuZIO-71JrVRFq~Zx6aS1xZZFb43n8b-j35L8iVZjE1KPnjFIpZ0GgbApYmso5A~zreQbEO-MaeD-YvwGuRE3wmSrATQlGj3R2Uxq48jkzhVKQJyQqHBQ8HdzS35QzgD~i7QbEtwRQlIpsA8J3EBkwyR-samIovvZY18feT6FHoOMVZDTRA3R1P9iLWvqUVtimge2VQ__");
   background-position-x: center;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .logo-partyTime {
+  display: flex;
   color: white;
   font-family: "Jolly Lodger";
   font-size: 30px;
@@ -43,6 +44,7 @@
 }
 
 .button-header {
+  display: flex;
   width: 141px;
   height: 54px;
   padding: 16px 24px 16px 24px;

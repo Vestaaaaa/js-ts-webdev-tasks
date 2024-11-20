@@ -45,6 +45,16 @@ let currentLocale: "en" | "ar" = "en";
 export function changeLocale() {
   currentLocale = currentLocale === "en" ? "ar" : "en";
   translateAllTextOnPage();
+
+  const contentElements = document.querySelectorAll("#content");
+
+  contentElements.forEach((element) => {
+    if (currentLocale === "ar") {
+      document.body.classList.add("reverse");
+    } else {
+      document.body.classList.remove("reverse");
+    }
+  });
 }
 
 function translateAllTextOnPage() {
@@ -52,7 +62,12 @@ function translateAllTextOnPage() {
   const elementsForTranslation = document.querySelectorAll("[data-i18n]");
   elementsForTranslation.forEach((element) => {
     const key = element.getAttribute("data-i18n");
-    element.innerText = localeMessages[key];
+    //element.innerText = localeMessages[key];
+    const translation = localeMessages[key];
+
+    if (translation) {
+      element.textContent = translation;
+    }
   });
 }
 
@@ -70,11 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const switcher = heroSection.querySelector(".switcher");
   switcher.addEventListener("click", changeLocale);
-
-  /*const switchButton: HTMLElement = AppButtonLocalization();
-  switchButton.setAttribute("data-i18n", "switchButton");
-  heroSection.appendChild(switchButton);
-  switchButton.addEventListener("click", changeLocale); */
 
   const gallerySection: HTMLElement = AppPageGallery();
   app.appendChild(gallerySection);

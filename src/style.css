@@ -1,10 +1,15 @@
 body {
-  width: 1440px;
   height: 3952px;
   margin: 0;
+}
+
+body.reverse {
+  direction: rtl;
+  text-align: right;
 }
 
 .app-container {
   width: 1440px;
   background-color: #000015;
+  margin: 0 auto;
 }
